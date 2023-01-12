@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>My App</title>
+    <style>
+      /* Add your CSS here */
+      /* Add a font and some basic styling to the body */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Center the loading screen and give it some padding */
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/* Style the loading animation */
+#loading img {
+  width: 50px;
+  height: 50px;
+  animation: rotate 1s infinite linear;
+}
+
+/* Keyframes for the loading animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        </div>
+    <script>
+      // Show the loading screen when the page is loading
+    //   document.getElementById("loading").style.display = "block";
+
+    //   // Once the page is done loading, hide the loading screen
+    //   window.addEventListener("load", function() {
+    //     document.getElementById("loading").style.display = "none";
+    //   });
+    </script>
+  </body>
+</html>
