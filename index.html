@@ -6,37 +6,115 @@
         </title>
         <script src = "currency.js"> 
         </script>
-        <link rel="stylesheet" href="style.css">
-        <script src="weather.js"></script>
-        <!-- <style>
-            #currency_exchange{
-                display: none;
-            }
-        </style> -->
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            document.addEventListener('DOMContentLoaded',()=>{
+                document.querySelector('#projects').style.display = 'none';
+                document.querySelector('#contact').style.display = 'none';
+                
+            });
+        </script>
+        
     </head>
     <body>
         <header>
-            <div>Hello there, It's Sachin Tripathi. I am a full stack developer for web and android. I am currently working as a freelancer and am a student at Harcourt Butler Technical University.</div>
+            <div>Hello there, It's <p>Sachin Tripathi</p></div>
 
             <div>
                 <nav>
-                    <ul>
-                        <li><a href = "#">Home</a></li>
-                        <li><a href = "#">Projects</a></li>
-                        <li><a href = "#">Contact</a></li>
-                        <li><a href = "#">About</a></li>
+                    <ul class="menuItems">
+                        <li><a href = "#" id="home_data" data-item="Home">Home</a></li>
+                        <li><a href = "#" id="projects_det" data-item="Projects">Projects</a></li>
+                        <li><a href = "#" id="contact_me" data-item="Contact">Contact</a></li>
+                        <li><a href = "#" id="about_me" data-item="About">About</a></li>
                     </ul>
                 </nav>
             </div>
-            <div id="home">
-                
+            <div id="home" class="box">
+                <section>I am a full stack developer for web and android. I am currently working as a freelancer and am a student at Harcourt Butler Technical University
+                persuing Bachelors in the field of Paint Technology. Other than that I am getting involved in the technology of software development.</section>
             </div>
-            <div id="projects">
+            <div id="projects" class="box">
+                <ul>
+                    <li>
+                        <h2><a href="#">Currency Exchange</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                HTML, CSS, JavaScript
+                            </li>
+                            <li>It uses an api to get the exchange rates of the requested currency.</li>
+                            <li>Simply uses HTML, CSS and JavaScript for the UI.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="#">Get Weather Details</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                HTML, CSS, JavaScript
+                            </li>
+                            <li>It uses javascript to get the location and then uses an api to get the weather details for the same place.</li>
 
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/sachin972/sort-and-see">Sorting Visualizer</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                HTML, CSS, JavaScript, Bootstrap
+                            </li>
+                            <li>An application that shows how the sorting is done behind the scenes.</li>
+                            <li>It gets an array as an input and asks you for the method of sorting and then shows the process in the UI to sort the array.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/sachin972/bmi-calc">BMI Calculator</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                Flutter, Dart
+                            </li>
+                            <li>An android application with a great UI to get the bmi as per the given inputs for weight and height.</li>
+                            <li>After calculating it provides the tips for maintaining the bmi.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/sachin972/todo.github.io">To-Do App</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                HTML, CSS, Python, Django
+                            </li>
+                            <li>Designed an interface to save the time table for later until the session is active.</li>
+                            <li>Using python and django, it stores the given tasks until the session logs out.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/sachin972/Xylo">Xylophone</a></h2>
+                        <ul>
+                            <li>
+                                <h4>Skills Used:</h4>
+                                Flutter, Dart
+                            </li>
+                            <li>A simple frontend app uses sounds on pressing different buttons.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div id="contact">
+            <div id="contact" class="box">
 
             </div>
         </header>
+
+
+        <footer>
+            <div class="footer-copyright text-center">&copy; Developed with ❤️</i> by
+                <a href="#" class="white-text">Sachin Tripathi</a>.
+              </div>
+            
+            </footer>
+
     </body>
 </html>
