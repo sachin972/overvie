@@ -4,14 +4,22 @@
 }
 
 .box{
-  position: relative;
+  position:relative;
   width: 60%;
-  margin: 55px auto;
-  
+  margin: 35px auto;
+  padding: 16px;
+  background-color: #cfbaba;
+}
+
+.box1{
+  position: relative;
+  width: 50%;
+  margin: 35px auto;
+  padding: 16px;
 }
 
 section{
-  padding: 70px;
+  padding: 90px;
 }
 
 

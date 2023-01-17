@@ -7,12 +7,9 @@
         <script src = "currency.js"> 
         </script>
         <link rel="stylesheet" href="styles.css">
-        <script>
-            document.addEventListener('DOMContentLoaded',()=>{
-                document.querySelector('#projects').style.display = 'none';
-                document.querySelector('#contact').style.display = 'none';
-                
-            });
+        <script src = 'index.js'>
+
+            
         </script>
         
     </head>
@@ -23,22 +20,23 @@
             <div>
                 <nav>
                     <ul class="menuItems">
-                        <li><a href = "#" id="home_data" data-item="Home">Home</a></li>
-                        <li><a href = "#" id="projects_det" data-item="Projects">Projects</a></li>
-                        <li><a href = "#" id="contact_me" data-item="Contact">Contact</a></li>
-                        <li><a href = "#" id="about_me" data-item="About">About</a></li>
+                        <li><a href = "#" class="buttons" id="home_data" data-item="Home">Home</a></li>
+                        <li><a href = "#" class="buttons" id="projects_det" data-item="Projects">Projects</a></li>
+                        <li><a href = "#" class="buttons" id="contact_me" data-item="Contact">Contact</a></li>
+                        <li><a href = "#" class="buttons" id="about_me" data-item="About">About</a></li>
                     </ul>
                 </nav>
             </div>
-            <div id="home" class="box">
+            <div id="Home" class="box">
                 <section>I am a full stack developer for web and android. I am currently working as a freelancer and am a student at Harcourt Butler Technical University
                 persuing Bachelors in the field of Paint Technology. Other than that I am getting involved in the technology of software development.</section>
             </div>
-            <div id="projects" class="box">
+            <div id="Projects" class="box">
+                <section>
                 <ul>
                     <li>
-                        <h2><a href="#">Currency Exchange</a></h2>
-                        <ul>
+                        <h2 data-value="project1"><a href="#">Currency Exchange</a></h2>
+                        <ul class="box1" id="project1">
                             <li>
                                 <h4>Skills Used:</h4>
                                 HTML, CSS, JavaScript
@@ -48,8 +46,8 @@
                         </ul>
                     </li>
                     <li>
-                        <h2><a href="#">Get Weather Details</a></h2>
-                        <ul>
+                        <h2 data-value="project2"><a href="#">Get Weather Details</a></h2>
+                        <ul class="box1" id="project2">
                             <li>
                                 <h4>Skills Used:</h4>
                                 HTML, CSS, JavaScript
@@ -59,8 +57,8 @@
                         </ul>
                     </li>
                     <li>
-                        <h2><a href="https://github.com/sachin972/sort-and-see">Sorting Visualizer</a></h2>
-                        <ul>
+                        <h2 data-value="project3"><a href="https://github.com/sachin972/sort-and-see">Sorting Visualizer</a></h2>
+                        <ul class="box1" id="project3">
                             <li>
                                 <h4>Skills Used:</h4>
                                 HTML, CSS, JavaScript, Bootstrap
@@ -70,8 +68,8 @@
                         </ul>
                     </li>
                     <li>
-                        <h2><a href="https://github.com/sachin972/bmi-calc">BMI Calculator</a></h2>
-                        <ul>
+                        <h2 data-value="project4"><a href="https://github.com/sachin972/bmi-calc">BMI Calculator</a></h2>
+                        <ul class="box1" id="project4">
                             <li>
                                 <h4>Skills Used:</h4>
                                 Flutter, Dart
@@ -81,8 +79,8 @@
                         </ul>
                     </li>
                     <li>
-                        <h2><a href="https://github.com/sachin972/todo.github.io">To-Do App</a></h2>
-                        <ul>
+                        <h2 data-value="project5"><a href="https://github.com/sachin972/todo.github.io">To-Do App</a></h2>
+                        <ul class="box1" id="project5">
                             <li>
                                 <h4>Skills Used:</h4>
                                 HTML, CSS, Python, Django
@@ -92,8 +90,8 @@
                         </ul>
                     </li>
                     <li>
-                        <h2><a href="https://github.com/sachin972/Xylo">Xylophone</a></h2>
-                        <ul>
+                        <h2 data-value="project6"><a href="https://github.com/sachin972/Xylo">Xylophone</a></h2>
+                        <ul class="box1" id="project6">
                             <li>
                                 <h4>Skills Used:</h4>
                                 Flutter, Dart
@@ -102,9 +100,10 @@
                         </ul>
                     </li>
                 </ul>
+                </section>
             </div>
-            <div id="contact" class="box">
-
+            <div id="Contact" class="box">
+                <section></section>
             </div>
         </header>
 
