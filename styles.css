@@ -16,15 +16,19 @@
   width: 50%;
   margin: 35px auto;
   padding: 16px;
+  /* list-style: none; */
 }
 
 section{
   padding: 90px;
 }
 
+header{
+  padding: 5%;
+}
 
 body {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,6 +36,10 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: Hack, monospace;
+}
+
+h3{
+  padding: 20px;
 }
 
 div {
@@ -86,17 +94,19 @@ p:hover::before {
   transition: all 0.5s ease-in-out;
 }
 
+
+
 nav {
   margin: 25px auto;
   width: 60%;
   background: #f9f9f9;
   padding: 16px;
 }
-nav .menuItems {
+.menuItems {
   list-style: none;
   display: flex;
 }
-nav .menuItems li {
+.menuItems li {
   margin: 50px auto;
 }
 nav .menuItems li a {
@@ -126,7 +136,7 @@ nav .menuItems li a:hover::before {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   font-size: 12px;
   bottom: 0;
   width: 100%;
