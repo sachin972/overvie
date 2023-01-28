@@ -36,12 +36,21 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+      - name: Cache node modules
+        uses: actions/cache@v3
+        env:
+          cache-name: node_modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
 
   # Deployment job
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "https://sachintri.com"
     runs-on: ubuntu-latest
     needs: build
     steps:
